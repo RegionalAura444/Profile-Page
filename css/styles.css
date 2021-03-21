@@ -1,0 +1,169 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*type selectors*/
+
+html{
+    text-align: center;
+    font-family: Oswald, monospace, sans-serif;
+   
+}
+
+header{
+    background:black;
+    color:white;
+    padding:2px
+}
+
+h2{
+    margin-top:2px;
+    margin-bottom:50px;
+    padding-top: 50px;
+    color: black;
+}
+
+h3{
+    margin:5px 0;
+}
+
+img{
+    max-width:80%;
+    border: 10px;;
+}
+
+div{
+    margin-bottom: 0
+}
+
+footer{
+    background:black;
+    color:white;
+    padding:2px;
+    margin-top:20px ;
+}
+
+li{
+    margin:0.5em;
+    padding: 5px;
+    background:rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+
+ul{
+    padding:0 20px;
+}
+
+/*anchor styles*/
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+section{
+    padding:30px 30px 0 30px;
+}
+
+/*class selectors*/
+
+.main{
+    background:white;
+    padding:30px 30px 0 30px;
+    color: black;
+}
+
+.profile_picture{
+    padding:20px 20px;
+    border-radius:10%;
+}
+
+.main_nav{
+    padding-right: 20px;
+    background: black;
+    list-style-type: none;
+}
+
+.last{
+    display: flex;
+    
+}
+
+.name{
+    justify-content: space-between;
+
+}
+
+.col{
+    background: black;
+    color: white;
+}
+
+.dev{
+    padding-left: 20px;
+}
+
+/*id selectors*/
+
+#introduction{
+    padding:20px;
+    
+}
+
+#Contact{
+    color:white;
+}
+
+
+  
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    .intro-header,
+    .main_nav,
+    .col,
+    .main{
+        display: flex;
+    }
+    .intro-header{
+        flex-direction:column;
+        align-items: center;
+    }
+    .col{
+        flex-direction: row-reverse;
+    }
+    .main{
+        flex:50%;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom 30px; ;
+    }
+    .column{
+        flex-basis: 50vh;
+
+    }
+
+    img{
+        max-width:40vh;
+        border: 10px;;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px){
+    .intro-header{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .col p{
+        flex-direction:column;
+        float: right;
+    }
+}
