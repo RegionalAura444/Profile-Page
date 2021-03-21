@@ -88,21 +88,16 @@ section{
     list-style-type: none;
 }
 
-.last{
-    display: flex;
-    
+.last {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
-
 .name{
-    justify-content: space-between;
-
+   padding: 20px;
+   text-align: center;
 }
-
-.col{
-    background: black;
-    color: white;
-}
-
+   
 .dev{
     padding-left: 20px;
 }
@@ -111,6 +106,7 @@ section{
 
 #introduction{
     padding:20px;
+    color: black;
     
 }
 
