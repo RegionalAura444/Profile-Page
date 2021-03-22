@@ -30,7 +30,7 @@ h3{
 }
 
 img{
-    max-width:80%;
+    max-width:90%;
     border: 10px;;
 }
 
@@ -42,7 +42,7 @@ footer{
     background:black;
     color:white;
     padding:2px;
-    margin-top:20px ;
+    margin-top:5px ;
 }
 
 li{
@@ -64,17 +64,25 @@ a{
     color:white;
 }
 
+a:visited{
+    color: chartreuse;
+}
+
 
 section{
-    padding:30px 30px 0 30px;
+    padding:0 30px 0 30px;
+}
+
+.column p{
+    margin:0 30px 30px;  
 }
 
 /*class selectors*/
 
 .main{
-    background:white;
-    padding:30px 30px 0 30px;
+    background:gray;
     color: black;
+    padding-top: 10px;
 }
 
 .profile_picture{
@@ -97,7 +105,11 @@ section{
    padding: 20px;
    text-align: center;
 }
-   
+
+.name_top{
+    padding-top:20px;
+}
+
 .dev{
     padding-left: 20px;
 }
@@ -114,6 +126,10 @@ section{
     color:white;
 }
 
+#footer-nav{
+    display: none;
+}
+
 
   
 
@@ -126,29 +142,58 @@ section{
     .main{
         display: flex;
     }
+
     .intro-header{
         flex-direction:column;
         align-items: center;
     }
+
     .col{
         flex-direction: row-reverse;
     }
+
     .main{
-        flex:50%;
-        flex-direction:row;
         flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom 30px; ;
     }
+
     .column{
-        flex-basis: 50vh;
-
+        max-width: 50%;
     }
 
-    img{
-        max-width:40vh;
-        border: 10px;;
+    .column img{
+        width:80%;
     }
+
+    #footer-nav{
+        display: flex;
+      
+    }
+
+    #footer-nav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    nav ul{
+        display: flex;
+     }
+
+    nav li{
+        background: none;
+    }
+
+    .name_top{
+        display: none;
+    }
+
+    .last_footer{
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    
 
 
 }
@@ -162,4 +207,26 @@ section{
         flex-direction:column;
         float: right;
     }
+
+    .main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .column p{
+        width:80%;
+        align-content: center;
+   
+    }
+
+    .column{
+        width:30%;
+    }
+
+    div.column{
+        margin-left:30px;
+    }
+
+
 }
