@@ -117,7 +117,7 @@ section{
 /*id selectors*/
 
 #introduction{
-    padding:20px;
+    padding:40px;
     color: black;
     
 }
@@ -213,6 +213,10 @@ section{
         margin-right: auto;
     }
 
+    .col p{
+        padin
+    }
+
 
     .column p{
         width:80%;
@@ -226,6 +230,10 @@ section{
 
     div.column{
         margin-left:30px;
+    }
+
+    section{
+        padding:0 60px 60px 60px;
     }
 
 
